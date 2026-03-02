@@ -13,6 +13,7 @@ public class Main {
     public static void main(String[] args) {
         //System.out.println("Célok...");
         //new Solution().task01();
-        new Sol().task01();
+        //new Sol().task01();
+        //Storage.writeToFile(null);
     }
 }

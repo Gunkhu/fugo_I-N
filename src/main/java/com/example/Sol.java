@@ -26,6 +26,7 @@ public class Sol {
         }
         sc.close();
         printTargets(targetList);
+        startWrite(targetList);
     }
 
 
@@ -35,5 +36,14 @@ public class Sol {
         }
 
     }
+    public void startWrite(List<String> targetList){
+        
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String target : targetList) {
+            stringBuilder.append(target);
+            stringBuilder.append("\n");
+        }
+        Storage.writeToFile(stringBuilder.toString());
+        }
 }
     
